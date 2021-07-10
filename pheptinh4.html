@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+<b> Caculator</b>; <br>
+  <input type="text" ; id="bt1">
+  <input type="text" ;  id="bt2"><br>
+  <button type="button" onclick="cong()"> addition(+)</button>
+  <button type="button" onclick="tru()"> subtracction(-)</button>
+  <button type="button" onclick="nhan()"> multiplication(*)</button>
+  <button type="button" onclick="chia()"> division(/)</button>
+  <div id="ket qua"> </div>
+  <script>
+    function cong() {
+      let a = +document.getElementById("bt1").value;
+      let b = +document.getElementById("bt2").value;
+      document.getElementById("ket qua").innerText = " result :" + (a + b);
+    }
+
+    function  tru() {
+      let a = +document.getElementById("bt1").value;
+      let b = +document.getElementById("bt2").value;
+      document.getElementById("ket qua").innerText= "result :" + (a-b);
+    }
+    function  nhan() {
+      let a = +document.getElementById("bt1").value;
+      let b = +document.getElementById("bt2").value;
+      document.getElementById("ket qua").innerText="result :" +(a*b) ;
+
+}
+    function  chia () {
+      let a = +document.getElementById("bt1").value;
+      let b = +document.getElementById("bt2").value;
+      document.getElementById("ket qua").innerText="result :" +(a/b) ;
+    }
+
+  </script>
+
+
+</form>
+
+</body>
+</html>
